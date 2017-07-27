@@ -31,33 +31,50 @@
                                 <rect key="frame" x="241" y="161" width="64" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rez-9I-cJC">
-                                <rect key="frame" x="153.5" y="220.5" width="68" height="30"/>
-                                <state key="normal" title="GET TWO"/>
-                                <connections>
-                                    <action selector="PressTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BmX-8h-28K"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDi-sn-Pi9">
-                                <rect key="frame" x="155.5" y="140.5" width="64" height="30"/>
-                                <state key="normal" title="GET ONE"/>
+                                <rect key="frame" x="139.5" y="140.5" width="96" height="30"/>
+                                <state key="normal" title="GET ANSWER"/>
                                 <connections>
                                     <action selector="PressOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TWJ-kF-ZmV"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="th6-mK-5RL">
+                                <rect key="frame" x="137.5" y="190.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4WM-uq-uAX"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hjb-eE-A4d">
+                                <rect key="frame" x="137.5" y="240.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="LCI-N3-S3j"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="th6-mK-5RL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2yL-kg-w82"/>
+                            <constraint firstItem="hjb-eE-A4d" firstAttribute="top" secondItem="th6-mK-5RL" secondAttribute="bottom" constant="20" id="36u-gS-ywE"/>
                             <constraint firstItem="eDi-sn-Pi9" firstAttribute="top" secondItem="btk-dR-4ZZ" secondAttribute="bottom" constant="50" id="40Q-ww-Fad"/>
                             <constraint firstItem="btk-dR-4ZZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FQo-nd-Uzv"/>
                             <constraint firstItem="eDi-sn-Pi9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HYH-Pf-EN9"/>
-                            <constraint firstItem="rez-9I-cJC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TYg-MC-nRK"/>
+                            <constraint firstItem="hjb-eE-A4d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="adK-ke-ZTD"/>
+                            <constraint firstItem="th6-mK-5RL" firstAttribute="top" secondItem="eDi-sn-Pi9" secondAttribute="bottom" constant="20" id="bQW-u7-RG8"/>
                             <constraint firstItem="btk-dR-4ZZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="i5p-cZ-3Nh"/>
-                            <constraint firstItem="rez-9I-cJC" firstAttribute="top" secondItem="eDi-sn-Pi9" secondAttribute="bottom" constant="50" id="tYz-TI-vAu"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="Label1" destination="btk-dR-4ZZ" id="QFv-Uo-KHI"/>
+                        <outlet property="Text1" destination="th6-mK-5RL" id="TCu-NW-XKW"/>
+                        <outlet property="Text2" destination="hjb-eE-A4d" id="tfW-2E-Uka"/>
+                        <outlet property="text1" destination="th6-mK-5RL" id="9Pw-pV-fC6"/>
+                        <outlet property="text2" destination="hjb-eE-A4d" id="oDf-jT-tSF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

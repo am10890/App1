@@ -12,24 +12,23 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var Label1: UILabel!
     
-    var tapCount = 0
+  
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
     
     @IBAction func PressOne(_ sender: Any) {
-        
-       tapCount = tapCount + 1
+   
+        Label1.text = "Answer \(Double(text1.text!)! + Double(text2.text!)!)"
     
-        if tapCount > 19 {
-            Label1.text = "STOP PRESSING THE BLOODY BUTTON!!"
+        
+    
+        
         }
         
-    }
     
     
-    @IBAction func PressTwo(_ sender: Any) {
-        
-        Label1.text = "TWO!"
-        
-    }
+    
     
     
     
