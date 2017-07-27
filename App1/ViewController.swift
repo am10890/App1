@@ -18,14 +18,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var text2: UITextField!
     
     @IBAction func PressOne(_ sender: Any) {
-   
-        Label1.text = "Answer \(Double(text1.text!)! + Double(text2.text!)!)"
-    
         
-    
+        let addition = true
         
+        if addition {
+            Label1.text = "Answer \(Double(text1.text!)! + Double(text2.text!)!)"
+        } else {
+            Label1.text = "Answer \(Double(text1.text!)! - Double(text2.text!)!)"
         }
         
+        
+    }
+    
     
     
     
